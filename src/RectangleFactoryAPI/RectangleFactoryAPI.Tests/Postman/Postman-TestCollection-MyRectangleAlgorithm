@@ -1,0 +1,252 @@
+{
+	"info": {
+		"_postman_id": "5f2b2f49-1f4e-44d0-9674-080412a9e372",
+		"name": "RectangleAlgorithm",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get - Current",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:44322/api/RectangleFactory/FactoryOutput/Current",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44322",
+					"path": [
+						"api",
+						"RectangleFactory",
+						"FactoryOutput",
+						"Current"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post - Less than min requirement",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"rectangleCreationNumber\" : -1\n}\n\t",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:44322/api/RectangleFactory/GenerateRectangles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44322",
+					"path": [
+						"api",
+						"RectangleFactory",
+						"GenerateRectangles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post - Greater than max requirement",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"rectangleCreationNumber\" : 45\n}\n\t",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:44322/api/RectangleFactory/GenerateRectangles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44322",
+					"path": [
+						"api",
+						"RectangleFactory",
+						"GenerateRectangles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post - 20",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"rectangleCreationNumber\" : 20\n}\n\t",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:44322/api/RectangleFactory/GenerateRectangles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44322",
+					"path": [
+						"api",
+						"RectangleFactory",
+						"GenerateRectangles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post - 4",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"rectangleCreationNumber\" : 4\n}\n\t",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:44322/api/RectangleFactory/GenerateRectangles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44322",
+					"path": [
+						"api",
+						"RectangleFactory",
+						"GenerateRectangles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get - Query - Less than min requirement",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:44322/api/RectangleFactory/FactoryOutput/RectangleCreationNumber/-1/Search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44322",
+					"path": [
+						"api",
+						"RectangleFactory",
+						"FactoryOutput",
+						"RectangleCreationNumber",
+						"-1",
+						"Search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get - Query - 20",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:44322/api/RectangleFactory/FactoryOutput/RectangleCreationNumber/20/Search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44322",
+					"path": [
+						"api",
+						"RectangleFactory",
+						"FactoryOutput",
+						"RectangleCreationNumber",
+						"20",
+						"Search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get - Query - 4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:44322/api/RectangleFactory/FactoryOutput/RectangleCreationNumber/4/Search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44322",
+					"path": [
+						"api",
+						"RectangleFactory",
+						"FactoryOutput",
+						"RectangleCreationNumber",
+						"4",
+						"Search"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
